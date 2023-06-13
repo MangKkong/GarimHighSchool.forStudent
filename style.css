@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 300px;
+  }
+  .box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 30px;
+    margin-top: 200px;
+  }
+
+/* PC 화면 */
+@media screen and (min-width: 768px) {
+  .column {
+    width: 50%;
+    float: left;
+  }
+}
+
+/* 핸드폰 화면 */
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+    float: none;
+  }
+}
